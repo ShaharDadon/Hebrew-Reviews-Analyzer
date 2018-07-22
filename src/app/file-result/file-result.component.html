@@ -1,0 +1,36 @@
+<div class="row m-6 pt-4">
+  <div class="col-10">
+    <div class="container">
+    
+  <table class="table">
+    <thead class = "thead-dark">
+      <tr>
+        <th class="col-sm-10">REVIEW</th>
+        <th class="col-sm-2">CLASSIFICATION</th>
+      </tr>
+    </thead>
+    <tbody>
+     <tr *ngFor="let review of reviews" [ngClass]="{
+    'table-success':review.result===1,
+    'table-danger':review.result===0
+     }">
+        <td>{{review.text}}</td>
+        <td class="text-center"><strong>{{review.result===1? "POSITIVE" : "NEGATIVE"}}</strong></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+      
+  </div>
+  
+  <div class="col-2">
+      <button type="button" class="btn btn-primary" (click)="returnHomePage()">Return</button>
+      <br/>
+      <div style="font-size: 22px">
+        <span class="badge badge-pill badge-light">{{message}}</span>
+      </div>
+  </div>
+  
+</div>

@@ -1,0 +1,18 @@
+html { 
+  margin: 0;
+  font-family: sans-serif;
+  
+}
+
+.header {
+  overflow: hidden;
+  font-size: 33px;
+  background-color: #f1f1f1;
+   text-align: center; 
+  line-height: 1.1;
+  color: white;
+  background: steelblue; 
+  text-transform: uppercase;
+  padding:20px 0;
+}
+
